@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "Banana bread",
+        "description": "This banana bread has been the most popular recipe on Simply Recipes for over 10 years. Thousands of people make it every day. Why? Because it really is the best banana bread recipe, period. You can mix everything in one bowl, you can vary the amount of sugar or bananas.",
+        "image": "banana-bread.jpg",
+        "pref_time": "10",
+        "bake_time": ["1", "1,15"],
+        "total_time": "1,10",
+        "yield": "1 loaf, 12 generousserving"
+    },
+    {
+        "id": 2,
+        "title": "Bread",
+        "description": "Bread is a staple food prepared from a dough of flour (usually wheat) and water, usually by baking. Throughout recorded history and around the world, it has been an important part of many cultures' diet. It is one of the oldest human-made foods, having been of significance since the dawn of agriculture, and plays an essential role in both religious rituals and secular culture.",
+        "image": "bread.jpg",
+        "pref_time": "10",
+        "bake_time": ["1", "1,15"],
+        "total_time": "1,10",
+        "yield": "1 loaf, 12 generousserving"
+    },
+        {
+        "id": 3,
+        "title": "bagel",
+        "description": "A bagel is a bread roll originating in the Jewish communities of Poland. It is traditionally shaped by hand into a roughly hand-sized ring from yeasted wheat dough that is first boiled for a short time in water and then baked. The result is a dense, chewy, doughy interior with a browned and sometimes crisp exterior.",
+        "image": "bagel.jpeg",
+        "pref_time": "10",
+        "bake_time": ["1", "1,15"],
+        "total_time": "1,10",
+        "yield": "1 loaf, 12 generousserving"
+    }
+]

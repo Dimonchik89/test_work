@@ -1,0 +1,16 @@
+@import "./vars";
+
+.wrapper {
+    height: calc(100vh - 134.5px);
+    background-image: url("/static/learn.jpg");
+    background-size: cover;
+
+    .content__wrapper {
+        padding-top: 100px;
+
+        .button__wrapper {
+            text-align: center;
+        }  
+    }
+}
+

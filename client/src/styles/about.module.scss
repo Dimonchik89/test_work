@@ -1,0 +1,16 @@
+@import "./vars";
+
+.wrapper {
+    height: calc(100vh - 134.5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .content__wrapper {
+        margin-top: 50px;
+
+        .card {
+            height: 100%;
+        }
+    }               
+}

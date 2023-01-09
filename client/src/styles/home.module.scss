@@ -1,0 +1,14 @@
+.wrapper {
+    height: calc(100vh - 134.5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/static/home.jpg");
+    background-size: cover;
+
+    
+    .description__wrapepr {
+        margin-top: 30px;
+    }
+}
+
