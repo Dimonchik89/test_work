@@ -1,10 +1,7 @@
 import products from "../../../db.json";
 
 const getAllProduct = (req, res) => {
-    res.statusCode = 200;
-    res.setHeader("Content-Type", "application/json")
-    const allProducts = products;
-    return res.json(allProducts)
+    return res.status(200).json(products)
 }
 
 export default getAllProduct;
