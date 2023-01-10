@@ -8,6 +8,10 @@
             height: 140px;
         }
 
+        .title {
+            text-transform: capitalize; 
+        }
+
         .description {
             display: block;
             display: -webkit-box;

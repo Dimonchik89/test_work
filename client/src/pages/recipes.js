@@ -31,10 +31,10 @@ const Recipes = ({products, errorCode}) => {
 export default Recipes
 
 export async function getStaticProps() {
-    const response = await fetch(`${process.env.BASE_URL}/product`)
+    const response = await fetch(`${process.env.BASE_URL}/products`)
     const errorCode = response.ok ? false: response.statusCode;
     const products = await response.json()
-
+    
     return {
         props: {
             products,

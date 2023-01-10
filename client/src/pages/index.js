@@ -1,5 +1,4 @@
 import { Box, Container, Typography } from "@mui/material"
-import { useRouter } from "next/router"
 
 import home from "../styles/home.module.scss"
 

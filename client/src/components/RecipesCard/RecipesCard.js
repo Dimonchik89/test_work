@@ -29,10 +29,19 @@ const RecipeCard = ({imgPath, title, description, id}) => {
                     title={title}
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography 
+                        gutterBottom 
+                        variant="h5" 
+                        component="div"
+                        className={recipes.title}
+                    >
                         {title}
                     </Typography>
-                    <Typography variant="body2" color="text.secondary" className={recipes.description}>
+                    <Typography 
+                        variant="body2" 
+                        color="text.secondary" 
+                        className={recipes.description}
+                    >
                         {description}
                     </Typography>
                 </CardContent>

@@ -7,6 +7,8 @@ import AddIcon from '@mui/icons-material/Add';
 import PrintIcon from '@mui/icons-material/Print';
 import useDownloader from "react-use-downloader";
 import ReactToPrint from 'react-to-print';
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import Link from '@mui/material/Link';
 
 import Error from "../../components/Error/Error";
 import RecipePageImage from "../../components/RecipePage/RecipePageImage";
@@ -15,7 +17,7 @@ import TimeCard from "../../components/TimeCard/TimeCard";
 import recipepage from "../../styles/recipepage.module.scss";
 
 const RecipePage = ({recipe, errorCode}) => {
-    const { query: { id } } = useRouter()
+    const router = useRouter()
     const pageRef = useRef(null)
     const { download } = useDownloader();
     let time = ''
@@ -39,10 +41,18 @@ const RecipePage = ({recipe, errorCode}) => {
                 ref={pageRef}
             >
                 <Grid container spacing={2}>
-                    <Grid item xl={6}>
+                    <Grid item xl={6} md={6} xs={12}>
+                        <Breadcrumbs aria-label="breadcrumb">
+                            <Link underline="hover" color="inherit" onClick={() => router.push("/recipes")} sx={{cursor: "pointer"}}>
+                                Recipes
+                            </Link>
+                            <Typography color="text.primary">{recipe.title}</Typography>
+                        </Breadcrumbs>
+
                         <Typography
                             variant="h3"
                             component="h2"
+                            className={recipepage.title}
                         >
                             {recipe.title}
                         </Typography>
@@ -82,7 +92,7 @@ const RecipePage = ({recipe, errorCode}) => {
                         </Box>
                     </Grid>
 
-                    <Grid item xl={6}>
+                    <Grid item xl={6} md={6} xs={12} sx={{width: '100%'}}>
                         <RecipePageImage image={`${recipe.image}`} title={recipe.title}/>
                     </Grid>
                 </Grid>
